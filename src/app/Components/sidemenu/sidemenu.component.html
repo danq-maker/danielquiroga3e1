@@ -1,0 +1,36 @@
+<div class="menu-container">
+    <button (click)="setVisibilitiMenu()" class="menu-button">Menu</button>
+    <div class="sidemenu-container"
+        [style.backgroundColor]="theme"
+        [style.width]="withMenu + '%'"
+        [style.display]="visibleMenu ? 'flex' : 'none'">
+        
+        <div class="profile" id="s">
+            <img src="https://cdn-icons-png.flaticon.com/512/711/711769.png" alt="Perfil" class="profile-img">
+            <div class="profile-info">
+                <p class="username">{{userName}}</p>
+                <button (click)="setVisibilitiMenu()" class="back-button">⬅</button>
+            </div>
+        </div>
+
+        <nav class="menu" >
+            <div class="item menu-item" id="s">
+                <p><span>📅</span> Dashboard</p>
+            </div>
+            
+            <div class="item menu-item" id="s">
+                <p><span>👨</span> Profile</p>
+            </div>
+        </nav>
+
+        <div class="action-buttons">
+            <button class="btn" (click)="setThemeColor('green')">Change Color</button>
+            <button class="btn" (click)="setSizeMenu()">Change Size</button>
+        </div> 
+        
+    </div>
+    <div class="a" >
+        <h1 class="aa">Ejercicio 2</h1>
+    </div>
+</div>
+
